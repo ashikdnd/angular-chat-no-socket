@@ -1,0 +1,47 @@
+.chat-wrapper {
+  position: relative;
+  margin: 0 auto;
+  margin-top: 80px;
+  width: 340px;
+  height: 420px;
+  background: #f0f0f0;
+  border-radius: 5px;
+  box-shadow: 1px 1px 16px -3px rgb(0 0 0 / 58%);
+  -webkit-box-shadow: 1px 1px 16px -3px rgb(0 0 0 / 58%);
+  -moz-box-shadow: 1px 1px 16px -3px rgba(0,0,0,0.58);
+
+}
+
+.no-msgs {
+  width: 100px;
+  margin-top: 50px;
+}
+
+#composer-wrapper {
+  position: absolute;
+  bottom: 0;
+  width: calc(100% - 23px);
+}
+
+#composer {
+  width: 100%;
+  padding: 10px;
+  outline: 0;
+}
+
+.user-msg {
+  color: #097bbb;
+  padding: 5px 8px;
+}
+
+.actions {
+  position: absolute;
+  right: 6px;
+  top: 6px;
+}
+
+.actions img {
+  width: 28px;
+  margin-right: 12px;
+  cursor: pointer;
+}

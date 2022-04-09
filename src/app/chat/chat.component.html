@@ -1,0 +1,16 @@
+<div class="chat-wrapper">
+  <div class="actions">
+    <img src="assets/img/icons/delete.png" (click)="clearMsgs()">
+    <img src="assets/img/icons/history.png" (click)="showHistory()">
+    <a routerLink="/task-list">LIST</a>
+  </div>
+  <div id="messages">
+    <div *ngFor="let msg of messages" class="user-msg">{{msg}}</div>
+    <div *ngIf="!messages.length" style="text-align: center">
+      <img class="no-msgs" src="assets/img/icons/no-message.png">
+    </div>
+  </div>
+  <div id="composer-wrapper">
+    <input autocomplete="off" type="text" name="composer" id="composer" [(ngModel)]="msg" (keyup)="submit($event)">
+  </div>
+</div>

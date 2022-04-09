@@ -1,0 +1,9 @@
+<div style="width: 200px">
+  <div  *ngFor="let item of commodities">
+    <input type="checkbox" name="" id="" [(ngModel)]="item.selected" [checked]="item.selected">
+    <span>{{item.name}}</span>
+  </div>
+
+
+  <input type="button" value="submit" (click)="changed()">
+</div>

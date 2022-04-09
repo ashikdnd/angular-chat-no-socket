@@ -1,0 +1,9 @@
+.item {
+  display: block;
+  background: grey;
+  margin: 10px;
+}
+
+.active {
+  background: red !important;
+}
